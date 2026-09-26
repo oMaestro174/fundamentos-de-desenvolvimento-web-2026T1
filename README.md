@@ -8,10 +8,10 @@ Este espaço reúne os roteiros teóricos, laboratórios passo a passo, códigos
 
 ---
 
-## 📖 Material Didático Oficial — Apostila Digital Completa
+## 📚 Materiais Didáticos & Guias Rápidos
 
-Acesse o livro-texto digital de referência completa com toda a teoria, diagramas conceituais, tabelas e boas práticas:  
-👉 **[Acessar Apostila Digital do Curso (apostila.md)](./apostila.md)**
+- 📖 **[Apostila Digital Completa do Curso (apostila.md)](./apostila.md)** — Livro-texto com 10 capítulos, diagramas conceituais, tabelas e boas práticas.
+- 🚀 **[Guia de Entrega de Projetos (Git/GitHub ou Arquivo ZIP)](./guia-de-entrega-git-e-zip.md)** — Passo a passo para publicar seu site no GitHub Pages ou entregar em sala via arquivo `.zip`.
 
 ---
 
@@ -51,7 +51,9 @@ Antes do início das aulas, certifique-se de ter instalado em seu computador:
 
 ## 🎯 Avaliações da Turma
 
-- **Avaliação A1 (30%):** Portal Semântico em HTML5 com Formulário Completo 👉 **[Acessar Roteiro Oficial A1](./Avaliacoes/A1/README.md)** (✅ **Aberta para Entrega**)
+- **Avaliação A1 (30%):** Portal Semântico em HTML5 com Formulário Completo  
+  👉 **[Acessar Roteiro Oficial A1](./Avaliacoes/A1/README.md)** (✅ **Aberta para Entrega**)  
+  *Entrega:* via repositório GitHub (com GitHub Pages opcional) ou via arquivo ZIP em sala. Veja o [Guia de Entrega](./guia-de-entrega-git-e-zip.md).
 - **Avaliação A2 (35%):** Interface Web Estilizada e Responsiva (Flexbox + CSS Grid) — *Prevista para Aula 05*
 - **Avaliação A3 (35%):** Projeto Integrador Interativo (HTML5 + CSS3 + JS DOM & LocalStorage) — *Prevista para Aula 08*
 
