@@ -29,26 +29,24 @@ Antes do início das aulas, certifique-se de ter instalado em seu computador:
 
 ## 🗺️ Cronograma de Aulas e Disponibilidade
 
-Os materiais e laboratórios serão liberados gradativamente pelo professor conforme o avanço das aulas:
-
-| Aula | Tópico Principal | Status | Links |
-| :---: | :--- | :---: | :---: |
-| **Aula 01** | Arquitetura Web, Internet vs Web, Setup VS Code, Live Server e HTML5 Base | ⏳ Em Breve | *Aguardando liberação em sala* |
-| **Aula 02** | Semântica HTML5, Estruturação, Listas, Tabelas e Mídia | ⏳ Em Breve | *Aguardando liberação em sala* |
-| **Aula 03** | Formulários HTML5, Inputs Modernos e Validação Nativa (Entrega A1) | ⏳ Em Breve | *Aguardando liberação em sala* |
+| Aula | Tópico Principal | Status | Material & Laboratório |
+| :---: | :--- | :---: | :--- |
+| **Aula 01** | Arquitetura Web, Internet vs Web, Setup VS Code, Live Server e HTML5 Base | ✅ **Disponível** | [Guia Teórico](./Aula01/README.md) \| [Laboratório Prático](./Aula01/laboratorio.md) \| [Código-Fonte](./Aula01/src/index.html) |
+| **Aula 02** | Semântica HTML5, Estruturação, Listas, Tabelas e Mídia | ✅ **Disponível** | [Guia Teórico](./Aula02/README.md) \| [Laboratório Prático](./Aula02/laboratorio.md) \| [Código-Fonte](./Aula02/src/index.html) |
+| **Aula 03** | Formulários HTML5, Inputs Modernos e Validação Nativa | ✅ **Disponível** | [Guia Teórico](./Aula03/README.md) \| [Laboratório Prático](./Aula03/laboratorio.md) \| [Código-Fonte](./Aula03/src/index.html) |
 | **Aula 04** | Introdução ao CSS3, Sintaxe, Seletores, Tipografia e Box Model | ⏳ Em Breve | *Aguardando liberação em sala* |
-| **Aula 05** | Layouts Modernos, Flexbox, CSS Grid e Responsividade (Entrega A2) | ⏳ Em Breve | *Aguardando liberação em sala* |
+| **Aula 05** | Layouts Modernos, Flexbox, CSS Grid e Responsividade | ⏳ Em Breve | *Aguardando liberação em sala* |
 | **Aula 06** | JavaScript Básico, Tipagem, Operadores e Estruturas de Controle | ⏳ Em Breve | *Aguardando liberação em sala* |
 | **Aula 07** | Manipulação da DOM e Eventos do Navegador | ⏳ Em Breve | *Aguardando liberação em sala* |
-| **Aula 08** | Depuração com DevTools, LocalStorage e Projeto Integrador (Entrega A3) | ⏳ Em Breve | *Aguardando liberação em sala* |
+| **Aula 08** | Depuração com DevTools, LocalStorage e Projeto Integrador | ⏳ Em Breve | *Aguardando liberação em sala* |
 
 ---
 
 ## 🎯 Avaliações da Turma
 
-- **Avaliação A1 (30%):** Portal Semântico em HTML5 com Formulário Completo.
-- **Avaliação A2 (35%):** Interface Web Estilizada e Responsiva (Flexbox + CSS Grid).
-- **Avaliação A3 (35%):** Projeto Integrador Interativo (HTML5 + CSS3 + JS DOM & LocalStorage).
+- **Avaliação A1 (30%):** Portal Semântico em HTML5 com Formulário Completo 👉 **[Acessar Roteiro Oficial A1](./Avaliacoes/A1/README.md)** (✅ **Aberta para Entrega**)
+- **Avaliação A2 (35%):** Interface Web Estilizada e Responsiva (Flexbox + CSS Grid) — *Prevista para Aula 05*
+- **Avaliação A3 (35%):** Projeto Integrador Interativo (HTML5 + CSS3 + JS DOM & LocalStorage) — *Prevista para Aula 08*
 
 ---
 
