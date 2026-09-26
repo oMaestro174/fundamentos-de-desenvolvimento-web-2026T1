@@ -8,6 +8,13 @@ Este espaço reúne os roteiros teóricos, laboratórios passo a passo, códigos
 
 ---
 
+## 📖 Material Didático Oficial — Apostila Digital Completa
+
+Acesse o livro-texto digital de referência completa com toda a teoria, diagramas conceituais, tabelas e boas práticas:  
+👉 **[Acessar Apostila Digital do Curso (apostila.md)](./apostila.md)**
+
+---
+
 ## 🚀 Visão Geral da Disciplina
 
 Neste curso prático e imersivo, você aprenderá a construir páginas e aplicações web modernas do zero:
