@@ -35,30 +35,44 @@ Construir uma página web completa, profissional e semanticamente estruturada qu
 
 ---
 
+## 🏷️ Padrão de Identificação da Entrega (Obrigatório)
+
+Para que o professor identifique facilmente sua turma, turno e nome, utilize a nomenclatura padrão:
+
+- **Se entregar via ZIP:**  
+  `A1_fundamentos_web_vespertino_Nome_Sobrenome.zip`
+- **Se entregar via Repositório no GitHub:**  
+  `a1-fundamentos-web-vespertino-nome-sobrenome`
+
+---
+
 ## 📤 Como Entregar sua Avaliação
 
 Você pode escolher uma das duas formas de entrega abaixo:
 
 ### Opção 1: Via Git e GitHub (Recomendado para seu Portfólio)
-1. Crie um repositório público no seu GitHub (ex: `avaliacao-a1-web`).
+1. Crie um repositório público no seu GitHub com o nome:  
+   `a1-fundamentos-web-vespertino-seu-nome`
 2. No terminal do VS Code na pasta do seu projeto:
    ```bash
    git init
    git branch -M main
    git add .
    git commit -m "feat: entrega da avaliacao A1"
-   git remote add origin https://github.com/SEU_USUARIO/avaliacao-a1-web.git
+   git remote add origin https://github.com/SEU_USUARIO/a1-fundamentos-web-vespertino-seu-nome.git
    git push -u origin main
    ```
 3. *(Opcional / Bônus)* Ative o **GitHub Pages** nas configurações (*Settings > Pages > main*) para ver seu site publicado na web!
 4. Envie o link do repositório para o professor.
 
-👉 **Consulte o passo a passo ilustrado em:** [Guia de Entrega Git e ZIP](../../guia-de-entrega-git-e-zip.md)
+👉 **Consulte o passo a passo detalhado em:** [Guia de Entrega Git e ZIP](../../guia-de-entrega-git-e-zip.md)
 
 ---
 
 ### Opção 2: Entrega em Sala de Aula via Arquivo ZIP
 Se você preferir entregar presencialmente ou estiver sem acesso ao Git:
-1. Coloque seus arquivos em uma pasta com seu nome: `A1_SeuNome_SeuSobrenome/`.
-2. Compacte a pasta em um arquivo `.zip` (botão direito na pasta > *Compactar para arquivo ZIP*).
-3. Entregue o arquivo `.zip` diretamente ao professor em sala de aula (via pendrive ou canal institucional da turma).
+1. Coloque seus arquivos em uma pasta com o padrão:  
+   `A1_fundamentos_web_vespertino_Nome_Sobrenome/`
+2. Compacte a pasta em formato `.zip` gerando o arquivo:  
+   `A1_fundamentos_web_vespertino_Nome_Sobrenome.zip`
+3. Entregue o arquivo `.zip` diretamente ao professor em sala de aula (via pendrive ou canal institucional).
