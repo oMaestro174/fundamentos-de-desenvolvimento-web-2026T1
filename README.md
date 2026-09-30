@@ -42,7 +42,7 @@ Antes do início das aulas, certifique-se de ter instalado em seu computador:
 | **Aula 02** | Semântica HTML5, Estruturação, Listas, Tabelas e Mídia | ✅ **Disponível** | [Guia Teórico](./Aula02/README.md) \| [Laboratório Prático](./Aula02/laboratorio.md) \| [Código-Fonte](./Aula02/src/index.html) |
 | **Aula 03** | Formulários HTML5, Inputs Modernos e Validação Nativa | ✅ **Disponível** | [Guia Teórico](./Aula03/README.md) \| [Laboratório Prático](./Aula03/laboratorio.md) \| [Código-Fonte](./Aula03/src/index.html) |
 | **Aula 04** | Introdução ao CSS3, Sintaxe, Seletores, Tipografia e Box Model | ✅ **Disponível** | [Guia Teórico](./Aula04/README.md) \| [Laboratório Prático](./Aula04/laboratorio.md) \| [Código-Fonte](./Aula04/src/index.html) |
-| **Aula 05** | Layouts Modernos, Flexbox, CSS Grid e Responsividade | ⏳ Em Breve | *Aguardando liberação em sala* |
+| **Aula 05** | Layouts Modernos, Flexbox, CSS Grid e Responsividade | ✅ **Disponível** | [Guia Teórico](./Aula05/README.md) \| [Laboratório Prático](./Aula05/laboratorio.md) \| [Slides](./Aula05/slides.md) \| [Código-Fonte](./Aula05/src/index.html) |
 | **Aula 06** | JavaScript Básico, Tipagem, Operadores e Estruturas de Controle | ⏳ Em Breve | *Aguardando liberação em sala* |
 | **Aula 07** | Manipulação da DOM e Eventos do Navegador | ⏳ Em Breve | *Aguardando liberação em sala* |
 | **Aula 08** | Depuração com DevTools, LocalStorage e Projeto Integrador | ⏳ Em Breve | *Aguardando liberação em sala* |
