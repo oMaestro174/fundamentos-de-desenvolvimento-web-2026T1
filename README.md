@@ -45,7 +45,7 @@ Antes do início das aulas, certifique-se de ter instalado em seu computador:
 | **Aula 05** | Layouts Modernos, Flexbox, CSS Grid e Responsividade | ✅ **Disponível** | [Guia Teórico](./Aula05/README.md) \| [Laboratório Prático](./Aula05/laboratorio.md) \| [Slides](./Aula05/slides.md) \| [Código-Fonte](./Aula05/src/index.html) |
 | **Aula 06** | JavaScript Básico, Tipagem, Operadores e Estruturas de Controle | ✅ **Disponível** | [Guia Teórico](./Aula06/README.md) \| [Laboratório Prático](./Aula06/laboratorio.md) |
 | **Aula 07** | Manipulação da DOM e Eventos do Navegador | ✅ **Disponível** | [Guia Teórico](./Aula07/README.md) \| [Laboratório Prático](./Aula07/laboratorio.md) \| [Slides](./Aula07/slides.md) \| [Guia DOM & SEO](./docs/dom-seo-e-boas-praticas.md) |
-| **Aula 08** | Depuração com DevTools, LocalStorage e Projeto Integrador | ⏳ Em Breve | *Aguardando liberação em sala* |
+| **Aula 08** | Depuração com DevTools, LocalStorage e Projeto Integrador | ✅ **Disponível** | [Guia Teórico](./Aula08/README.md) \| [Laboratório Prático](./Aula08/laboratorio.md) \| [Código-Fonte](./Aula08/src/index.html) |
 
 ---
 
@@ -54,8 +54,12 @@ Antes do início das aulas, certifique-se de ter instalado em seu computador:
 - **Avaliação A1 (30%):** Portal Semântico em HTML5 com Formulário Completo  
   👉 **[Acessar Roteiro Oficial A1](./Avaliacoes/A1/README.md)** (✅ **Aberta para Entrega**)  
   *Entrega:* via repositório GitHub (com GitHub Pages opcional) ou via arquivo ZIP em sala. Veja o [Guia de Entrega](./guia-de-entrega-git-e-zip.md).
-- **Avaliação A2 (35%):** Interface Web Estilizada e Responsiva (Flexbox + CSS Grid) — *Prevista para Aula 05*
-- **Avaliação A3 (35%):** Projeto Integrador Interativo (HTML5 + CSS3 + JS DOM & LocalStorage) — *Prevista para Aula 08*
+- **Avaliação A2 (35%):** Interface Web Estilizada e Responsiva (Flexbox + CSS Grid)  
+  👉 **[Acessar Roteiro Oficial A2](./Avaliacoes/A2/README.md)** (✅ **Aberta para Entrega**)  
+  *Entrega:* via repositório GitHub ou arquivo ZIP em sala. Veja o [Guia de Entrega](./guia-de-entrega-git-e-zip.md).
+- **Avaliação A3 (35%):** Projeto Integrador Front-end Completo (HTML5 + CSS3 + JS DOM & LocalStorage)  
+  👉 **[Acessar Roteiro Oficial A3](./Avaliacoes/A3/README.md)** (✅ **Aberta para Entrega**)  
+  *Entrega:* Projeto autoral completo com código-fonte no GitHub Pages ou arquivo ZIP.
 
 ---
 

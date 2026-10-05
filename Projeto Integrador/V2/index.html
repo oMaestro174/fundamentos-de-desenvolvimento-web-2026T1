@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encantos de Roraima — Mitos, Lendas & Tradições do Extremo Norte</title>
+    
+    <!-- Meta Tags para SEO e Indexação -->
+    <meta name="description" content="Explore as lendas ancestrais, mitos indígenas e tradições culturais de Roraima: Monte Roraima, Makunaima, Pedra Pintada, Tepequém e a culinária da Damorida.">
+    <meta name="keywords" content="Roraima, Monte Roraima, Makunaima, Lendas de Roraima, Cultura Indígena, Damorida, Tepequém, Pedra Pintada, Boa Vista, ITEAM">
+    <meta name="author" content="ITEAM — Curso de Fundamentos de Desenvolvimento Web">
+    
+    <!-- Open Graph para Redes Sociais -->
+    <meta property="og:title" content="Encantos de Roraima — Portal Cultural e Mitológico">
+    <meta property="og:description" content="Descubra a rica herança cultural do lavrado e das florestas de Roraima através de um portal interativo completo.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/monte-roraima.jpg">
+    
+    <!-- Google Fonts: Outfit (Títulos Modernos) e Plus Jakarta Sans (UI e Texto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Folha de Estilos Externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <!-- Âncora de topo absoluto para navegação -->
+    <div id="topo"></div>
+
+    <!-- ======================================================== -->
+    <!-- 1. HEADER & BARRA DE NAVEGAÇÃO SUPERIOR (AULAS 01, 02, 05) -->
+    <!-- ======================================================== -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#topo" class="logo" aria-label="Página inicial Encantos de Roraima">
+                <span class="logo-emblem">⛰️</span>
+                <div class="logo-text">
+                    <span class="logo-title">ENCANTOS</span>
+                    <span class="logo-sub">DE RORAIMA</span>
+                </div>
+            </a>
+
+            <!-- Menu de Links Desktop -->
+            <nav id="nav-menu" class="nav-menu" aria-label="Navegação principal">
+                <a href="#destaques" class="nav-link active">Destaques</a>
+                <a href="#lendas" class="nav-link">Lendas & Mitos</a>
+                <a href="#lugares" class="nav-link">Lugares Sagrados</a>
+                <a href="#gastronomia" class="nav-link">Culinária & Tradição</a>
+                <a href="#municipios" class="nav-link">Municípios</a>
+                <a href="#mural" class="nav-link">Mural Comunitário</a>
+            </nav>
+
+            <!-- Ações Rápidas: Favoritos, Tema e Hambúrguer -->
+            <div class="nav-actions">
+                <button id="btn-abrir-favoritos" class="btn-icon" aria-label="Ver lendas favoritas salvas" title="Ver Favoritos">
+                    <span class="icon">♥</span>
+                    <span id="badge-favoritos" class="badge-counter">0</span>
+                </button>
+
+                <button id="btn-tema" class="btn-icon" aria-label="Alternar entre modo claro e escuro" title="Alternar Tema">
+                    <span id="icone-tema">🌙</span>
+                </button>
+
+                <button id="btn-hamburguer" class="btn-hamburguer" aria-label="Abrir menu de navegação" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Faixa Emblema da Bandeira de Roraima -->
+        <div class="flag-stripe" aria-hidden="true"></div>
+    </header>
+
+    <!-- ======================================================== -->
+    <!-- 2. CARROSSEL ANCESTRAL HERO (SEGUINDO O GUIA DE SEO)     -->
+    <!-- ======================================================== -->
+    <section id="destaques" class="hero-carousel-section" aria-label="Destaques Culturais de Roraima">
+        <div class="carousel-container">
+            <!-- Slide 1: Monte Roraima -->
+            <article class="carousel-slide active" data-slide="0">
+                <div class="slide-media">
+                    <img src="assets/images/monte-roraima.jpg" alt="Vista aérea majestosa do Monte Roraima com cachoeiras e névoa matinal" loading="eager">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <span class="slide-tag">Cosmologia Macuxi &bull; Tepequém</span>
+                    <h1 class="slide-title">A Grande Árvore Wazaká e o Monte Roraima</h1>
+                    <p class="slide-desc">Na mitologia dos povos indígenas do lavrado, a sagrada árvore da vida Wazaká alimentava toda a humanidade. Ao ser cortada, de seu tronco brotaram as águas do mundo, transformando-se no imponente tepuy que guardamos até hoje.</p>
+                    <div class="slide-actions">
+                        <a href="artigos/monte-roraima.html" class="btn btn-primary">Explorar a Lenda Completa</a>
+                        <a href="#lendas" class="btn btn-outline">Ver Todas as Lendas ❯</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Slide 2: Makunaima -->
+            <article class="carousel-slide" data-slide="1">
+                <div class="slide-media">
+                    <img src="assets/images/makunaima.jpg" alt="Pintura representativa do herói mitológico Makunaima no alto de um mirante da savana de Roraima" loading="lazy">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <span class="slide-tag">Mito Criador &bull; Herança Ancestral</span>
+                    <h2 class="slide-title">Makunaima: O Criador e Demiurgo do Lavrado</h2>
+                    <p class="slide-desc">Muito além da literatura modernista, Makunaima é o grande demiurgo das etnias Macuxi, Taurepang e Ingarikó. Filho do Sol, ele moldou a fauna, a flora e as pedras de Roraima com sua sabedoria e força mística.</p>
+                    <div class="slide-actions">
+                        <a href="artigos/makunaima.html" class="btn btn-primary">Conhecer a História</a>
+                        <a href="#lendas" class="btn btn-outline">Ver Todas as Lendas ❯</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Slide 3: Wei e Kapei -->
+            <article class="carousel-slide" data-slide="2">
+                <div class="slide-media">
+                    <img src="assets/images/wei-kapei.jpg" alt="Arte cósmica representando o abraço celestial do Sol e da Lua sobre o lavrado de Roraima" loading="lazy">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <span class="slide-tag">Romance Cósmico &bull; Astronomia Indígena</span>
+                    <h2 class="slide-title">Wei e Kapei: O Amor do Sol e da Lua</h2>
+                    <p class="slide-desc">A tocante lenda do amor impossível entre Wei (o Sol radiante) e Kapei (a serena Lua). Condenados a vagar em tempos opostos no céu infinito do extremo norte, eles só podem se beijar durante os raros eclipses solares.</p>
+                    <div class="slide-actions">
+                        <a href="artigos/wei-kapei.html" class="btn btn-primary">Ler Lenda do Eclipse</a>
+                        <a href="#lendas" class="btn btn-outline">Ver Todas as Lendas ❯</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Controles do Carrossel -->
+            <button id="carousel-prev" class="carousel-nav-btn prev" aria-label="Slide anterior">❮</button>
+            <button id="carousel-next" class="carousel-nav-btn next" aria-label="Próximo slide">❯</button>
+
+            <!-- Indicadores (Dots) -->
+            <div class="carousel-indicators" role="tablist" aria-label="Indicadores dos slides">
+                <button class="dot active" data-slide="0" role="tab" aria-label="Ir para o slide 1"></button>
+                <button class="dot" data-slide="1" role="tab" aria-label="Ir para o slide 2"></button>
+                <button class="dot" data-slide="2" role="tab" aria-label="Ir para o slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 3. SEÇÃO PRINCIPAL: CATÁLOGO DE LENDAS COM FILTRO (DOM)  -->
+    <!-- ======================================================== -->
+    <main class="main-container">
+        <section id="lendas" class="section-block">
+            <div class="section-header">
+                <span class="section-badge">Acervo Cultural</span>
+                <h2 class="section-title">Mitos, Lendas & Lugares Sagrados</h2>
+                <p class="section-subtitle">Filtre por categoria ou pesquise em tempo real os grandes contos que formam a identidade do povo roraimense.</p>
+            </div>
+
+            <!-- Barra de Ferramentas de Filtragem e Busca -->
+            <div class="toolbar-box">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="campo-busca" placeholder="Pesquisar lenda, lugar ou ingrediente..." autocomplete="off">
+                </div>
+
+                <div class="filter-buttons" role="group" aria-label="Filtrar por categoria">
+                    <button class="filter-btn active" data-categoria="todos">Todos</button>
+                    <button class="filter-btn" data-categoria="lendas">Lendas Sagradas</button>
+                    <button class="filter-btn" data-categoria="lugares">Lugares Místicos</button>
+                    <button class="filter-btn" data-categoria="cultura">Culinária & Tradição</button>
+                </div>
+
+                <div class="counter-badge">
+                    <span id="contador-resultados">Exibindo 6 de 6 histórias</span>
+                </div>
+            </div>
+
+            <!-- Grade de Cards de Conteúdo (CSS Grid com multi-colunas lado a lado) -->
+            <div id="grid-cards" class="cards-grid">
+                
+                <!-- Card 1: Monte Roraima -->
+                <article class="lenda-card" data-categoria="lendas" data-id="monte-roraima">
+                    <div class="card-media">
+                        <img src="assets/images/monte-roraima.jpg" alt="Monte Roraima iluminado pelo sol" loading="lazy">
+                        <span class="card-badge badge-lenda">Lenda Sagrada</span>
+                        <button class="btn-favorito-card" aria-label="Favoritar esta lenda" title="Favoritar">♡</button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">A Árvore Wazaká (Monte Roraima)</h3>
+                        <p class="card-excerpt">A árvore colossal que abrigava todas as sementes do planeta. Sua queda deu origem aos rios da bacia amazônica e ao imponente platô rochoso.</p>
+                        <div class="card-meta">
+                            <span class="card-meta-tempo">⏱️ 4 min de leitura</span>
+                            <span class="card-meta-local">📍 Uiramutã / Monte Roraima</span>
+                        </div>
+                        <div class="lenda-narrativa-completa" hidden>
+                            <p>Segundo a riquíssima cosmologia dos povos <strong>Macuxi e Taurepang</strong>, nos primórdios da criação não existiam serras nem montanhas no lavrado. A terra era plana e fértil, e no centro de tudo erguia-se uma árvore colossal chamada <em>Wazaká</em> — a Grande Árvore da Vida.</p>
+                            <p>Dos galhos frondosos de Wazaká brotavam todas as frutas comestíveis, sementes, raízes e manjares que nutriam os seres humanos e os animais em perfeita harmonia. Ninguém precisava plantar nem passar fome, pois a árvore oferecia alimento inesgotável.</p>
+                            <p>Certo dia, tomada pela impaciência e pela ambição de colher todos os frutos de uma só vez, uma criatura cortou o tronco sagrado de Wazaká com um machado mítico. O impacto da queda abalou a Terra!</p>
+                            <p>Do toco decepado da árvore começou a jorrar uma torrente infinita de água pura, que deu origem a todos os rios, igarapés e cachoeiras que banham a bacia amazônica e as savanas do norte. O imenso tronco petrificou-se com o passar dos milênios, transformando-se no majestoso <strong>Monte Roraima</strong> (o <em>Tepuy</em> sagrado envolto em névoas perenes).</p>
+                            <p>Até hoje, os pajés ensinam que as quedas d'água que despencam dos paredões do Roraima são as lágrimas eternas da árvore Wazaká, lembrando à humanidade a importância sagrada de respeitar a natureza e nunca esgotar suas fontes de vida.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="artigos/monte-roraima.html" class="btn btn-card">Ler Lenda Completa ➔</a>
+                    </div>
+                </article>
+
+                <!-- Card 2: Makunaima -->
+                <article class="lenda-card" data-categoria="lendas" data-id="makunaima">
+                    <div class="card-media">
+                        <img src="assets/images/makunaima.jpg" alt="Guerreiro mítico Makunaima na savana" loading="lazy">
+                        <span class="card-badge badge-lenda">Lenda Sagrada</span>
+                        <button class="btn-favorito-card" aria-label="Favoritar esta lenda" title="Favoritar">♡</button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Makunaima, o Criador do Lavrado</h3>
+                        <p class="card-excerpt">Guerreiro sagrado dos povos Macuxi e Taurepang. A lenda de suas viagens, conflitos com espíritos da floresta e transformação de seres em montanhas.</p>
+                        <div class="card-meta">
+                            <span class="card-meta-tempo">⏱️ 5 min de leitura</span>
+                            <span class="card-meta-local">📍 Lavrado de Roraima</span>
+                        </div>
+                        <div class="lenda-narrativa-completa" hidden>
+                            <p>Muito antes da apropriação literária moderna, <strong>Makunaima</strong> já era cultuado como a figura central da gênese mitológica das etnias <em>Macuxi, Taurepang e Ingarikó</em>. Ele é o demiurgo — o ser primordial responsável por dar forma à paisagem de Roraima.</p>
+                            <p>Filho de Wei (o Sol), Makunaima e seus irmãos percorreram as extensas savanas do lavrado e as florestas densas caçando monstros, ensinando os segredos do fogo, o preparo da mandioca e as técnicas de caça com arco e flecha de ponta envenenada com curare.</p>
+                            <p>Em suas andanças mitológicas, Makunaima possuía o dom de punir a cobiça e a desobediência: animais gigantescos, gigantes e espíritos malévolos que desafiavam as leis sagradas eram transformados instantaneamente em rochas e serras.</p>
+                            <p>É por isso que, para os indígenas tradicionais, muitas formações geológicas singulares de Roraima não são pedras comuns, mas seres ancestrais encantados petrificados pelo sopro de Makunaima. Ao término de sua missão na Terra, o herói retirou-se para as montanhas sagradas, onde repousa aguardando o momento em que a harmonia do mundo precisará ser restaurada.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="artigos/makunaima.html" class="btn btn-card">Ler Lenda Completa ➔</a>
+                    </div>
+                </article>
+
+                <!-- Card 3: Pedra Pintada -->
+                <article class="lenda-card" data-categoria="lugares" data-id="pedra-pintada">
+                    <div class="card-media">
+                        <img src="assets/images/pedra-pintada.jpg" alt="Monólito da Pedra Pintada em Roraima com pinturas rupestres" loading="lazy">
+                        <span class="card-badge badge-lugar">Lugar Místico</span>
+                        <button class="btn-favorito-card" aria-label="Favoritar esta lenda" title="Favoritar">♡</button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">A Pedra Pintada e Seus Mistérios</h3>
+                        <p class="card-excerpt">Monólito pré-histórico de 35 metros de altura no coração da Terra Indígena São Marcos. Pinturas rupestres milenares e a lenda do sentinela de pedra.</p>
+                        <div class="card-meta">
+                            <span class="card-meta-tempo">⏱️ 3 min de leitura</span>
+                            <span class="card-meta-local">📍 Pacaraima / TI São Marcos</span>
+                        </div>
+                        <div class="lenda-narrativa-completa" hidden>
+                            <p>Emergindo solitária na planície dourada da Terra Indígena São Marcos, a <strong>Pedra Pintada</strong> é um monólito de arenito com mais de 35 metros de altura e cerca de 60 metros de diâmetro. Trata-se de um dos sítios arqueológicos mais fascinantes das Américas, com registros que remontam a mais de 4.000 anos.</p>
+                            <p>Nas paredes externas e nas grutas internas encontram-se centenas de pinturas rupestres vermelhas retratando figuras humanas, animais do lavrado, padrões astronômicos e símbolos rituais enigmáticos.</p>
+                            <p>As tradições orais dos povos da região contam que a rocha era habitada por um guerreiro protetor mítico. Em épocas de perigo, o monólito brilhava como brasa viva sob o sol do meio-dia para afugentar invasores. Os antigos xamãs realizavam rituais de consagração e cura sob suas sombras protetoras.</p>
+                            <p>Hoje, a Pedra Pintada é considerada solo sagrado pelos povos Macuxi e Wapichana, sendo um símbolo imutável de resistência cultural, arte ancestral e espiritualidade roraimense.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="artigos/pedra-pintada.html" class="btn btn-card">Ler Lenda Completa ➔</a>
+                    </div>
+                </article>
+
+                <!-- Card 4: Serra do Tepequém -->
+                <article class="lenda-card" data-categoria="lugares" data-id="serra-tepequem">
+                    <div class="card-media">
+                        <img src="assets/images/serra-tepequem.jpg" alt="Cachoeira cristalina na Serra do Tepequém" loading="lazy">
+                        <span class="card-badge badge-lugar">Lugar Místico</span>
+                        <button class="btn-favorito-card" aria-label="Favoritar esta lenda" title="Favoritar">♡</button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Serra do Tepequém & O Fogo Sagrado</h3>
+                        <p class="card-excerpt">Antigo vulcão adormecido cercado de cachoeiras cristalinas e platôs. A lenda de como a fúria das lavas se transformou em jazidas reluzentes de diamantes.</p>
+                        <div class="card-meta">
+                            <span class="card-meta-tempo">⏱️ 4 min de leitura</span>
+                            <span class="card-meta-local">📍 Amajari / Serra do Tepequém</span>
+                        </div>
+                        <div class="lenda-narrativa-completa" hidden>
+                            <p>Localizada no município de Amajari, a <strong>Serra do Tepequém</strong> é um acidente geográfico monumental cujo nome, na língua indígena ancestral, significa <em>"Deus do Fogo"</em> ou <em>"Montanha que Escarra Chamas"</em>. Geologicamente, a serra é um vulcão extinto há milhões de anos.</p>
+                            <p>A lenda indígena conta que, em tempos imemoriais, a montanha rugia com fúria cósmica e lançava torrentes de fogo sobre o lavrado. Os espíritos da floresta, condoídos com o sofrimento dos seres vivos, convocaram as chuvas torrenciais das cabeceiras dos rios para apagar o coração incandescente da montanha.</p>
+                            <p>O encontro violento do fogo ardente com as águas sagradas provocou uma explosão mágica: as lavas incandescentes resfriaram-se instantaneamente sob as profundezas da rocha, cristalizando-se e transformando-se nas lendárias pedras de <strong>diamantes e cristais de quartzo</strong> que mais tarde tornariam a serra famosa no século XX.</p>
+                            <p>Hoje, Tepequém é um santuário ecológico de águas puras, famoso pelas cachoeiras do Paiva, da Barata e do Sobradinho, onde viajantes de todo o mundo buscam paz e renovação espiritual.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="artigos/serra-tepequem.html" class="btn btn-card">Ler Lenda Completa ➔</a>
+                    </div>
+                </article>
+
+                <!-- Card 5: Damorida -->
+                <article class="lenda-card" data-categoria="cultura" data-id="damorida">
+                    <div class="card-media">
+                        <img src="assets/images/damorida.jpg" alt="Prato tradicional Damorida em panela de barro com beiju" loading="lazy">
+                        <span class="card-badge badge-cultura">Culinária & Tradição</span>
+                        <button class="btn-favorito-card" aria-label="Favoritar esta lenda" title="Favoritar">♡</button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">A Damorida Ancestral</h3>
+                        <p class="card-excerpt">O prato mais tradicional da culinária indígena de Roraima. Caldo encorpado de peixe com pimentas murupi, folhas silvestres e beiju crocante de mandioca.</p>
+                        <div class="card-meta">
+                            <span class="card-meta-tempo">⏱️ 3 min de leitura</span>
+                            <span class="card-meta-local">📍 Comunidades Indígenas</span>
+                        </div>
+                        <div class="lenda-narrativa-completa" hidden>
+                            <p>Patrimônio Cultural Imaterial de Roraima, a <strong>Damorida</strong> é muito mais do que um prato gastronômico: é um ritual de partilha, identidade e comunhão entre as famílias indígenas dos povos <em>Macuxi, Wapichana, Ingarikó, Taurepang e Wai-Wai</em>.</p>
+                            <p>Preparada tradicionalmente em panelas rústicas de barro moldadas à mão e cozidas sobre brasas de lenha nativa, a receita leva peixes nobres dos rios roraimenses (como o surubim, tucunaré ou filhote) ou carne de caça, cozidos em um caldo espesso e aromático.</p>
+                            <p>O grande diferencial da Damorida é a harmonização de pimentas frescas regionais — especialmente a <strong>pimenta murupi</strong> amarela e aromática, a pimenta-de-cheiro e a malagueta —, combinadas com folhas tenras de chicória-do-pará e folhas jovens de mandioca-brava (devidamente cozidas para eliminar o ácido cianídrico).</p>
+                            <p>O caldo fumegante é servido quente, acompanhado do tradicional <em>beiju de mandioca</em> feito no forno de barro. É costume molhar pedaços do beiju diretamente no caldo picante. O prato tem propriedades revigorantes e curativas comprovadas pela sabedoria milenar dos povos da Amazônia setentrional.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="artigos/damorida.html" class="btn btn-card">Ler Lenda Completa ➔</a>
+                    </div>
+                </article>
+
+                <!-- Card 6: Wei e Kapei -->
+                <article class="lenda-card" data-categoria="lendas" data-id="wei-kapei">
+                    <div class="card-media">
+                        <img src="assets/images/wei-kapei.jpg" alt="Sol e Lua em eclipse no horizonte do lavrado" loading="lazy">
+                        <span class="card-badge badge-lenda">Lenda Sagrada</span>
+                        <button class="btn-favorito-card" aria-label="Favoritar esta lenda" title="Favoritar">♡</button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">O Romance Eterno de Wei e Kapei</h3>
+                        <p class="card-excerpt">A narrativa poética dos amantes cósmicos que nunca se encontram de dia ou à noite, mas que nos brindam com a escuridão mística quando finalmente se abraçam.</p>
+                        <div class="card-meta">
+                            <span class="card-meta-tempo">⏱️ 4 min de leitura</span>
+                            <span class="card-meta-local">📍 Céu e Savanas de Roraima</span>
+                        </div>
+                        <div class="lenda-narrativa-completa" hidden>
+                            <p>Nas noites límpidas e estreladas do lavrado de Roraima, onde a linha do horizonte se perde na imensidão plana, os anciãos contam a lenda do amor eterno entre <strong>Wei</strong> (o Sol ardente e impetuoso) e <strong>Kapei</strong> (a Lua serena e luminosa).</p>
+                            <p>No início dos tempos, Wei e Kapei andavam juntos sobre a Terra e apaixonaram-se perdidamente. Seu amor era tão intenso que o calor e a luminosidade contínua não permitiam a chegada da noite, exaurindo as plantas e os animais.</p>
+                            <p>Para manter o equilíbrio da vida no cosmos, o grande espírito criador ordenou que eles fossem separados nos céus: Wei governaria o dia com seus raios dourados, e Kapei reinaria soberana sobre a noite com seu manto de estrelas prateadas.</p>
+                            <p>Desde então, quando Wei surge no leste, Kapei é obrigada a recolher-se no oeste. A Lua chora de saudade, e dizem que seu pranto transforma-se no orvalho fresco que umedece as gramíneas do lavrado nas primeiras horas da madrugada.</p>
+                            <p>Contudo, a cada ciclo de muitas luas, o amor dos dois quebra as barreiras cósmicas: eles conseguem cruzar suas órbitas e abraçam-se em um beijo apaixonado. É o <strong>eclipse solar</strong>! O dia escurece, os pássaros calam-se em reverência e o céu ganha uma coroa de luz mística — o testemunho visível de que nem mesmo as distâncias infinitas conseguem apagar um amor verdadeiro.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="artigos/wei-kapei.html" class="btn btn-card">Ler Lenda Completa ➔</a>
+                    </div>
+                </article>
+
+            </div> <!-- FIM DE #grid-cards -->
+
+            <p id="msg-busca-vazia" class="msg-busca-vazia" style="display: none;">Nenhuma história encontrada com o termo pesquisado. Tente outra palavra-chave!</p>
+        </section>
+
+        <!-- ======================================================== -->
+        <!-- SEÇÃO: LUGARES SAGRADOS & SÍTIOS MÍSTICOS (#lugares)      -->
+        <!-- ======================================================== -->
+        <section id="lugares" class="section-block">
+            <div class="section-header">
+                <span class="section-badge">Geografia Mística</span>
+                <h2 class="section-title">Lugares Sagrados de Roraima</h2>
+                <p class="section-subtitle">Conheça os sítios milenares, montanhas encantadas e santuários ecológicos que guardam a energia ancestral do extremo norte.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Lugar 1: Pedra Pintada -->
+                <article class="lenda-card" data-categoria="lugares" data-id="pedra-pintada">
+                    <div class="card-media">
+                        <img src="assets/images/pedra-pintada.jpg" alt="Monólito da Pedra Pintada em Roraima" loading="lazy">
+                        <span class="card-badge badge-lugar">Sítio Arqueológico</span>
+                        <button class="btn-favorito-card" aria-label="Favoritar" title="Favoritar">♡</button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">A Pedra Pintada (Pacaraima)</h3>
+                        <p class="card-excerpt">Monólito pré-histórico de 35 metros de altura no coração da Terra Indígena São Marcos. Pinturas rupestres de mais de 4.000 anos e a lenda do sentinela cósmico.</p>
+                        <div class="card-meta">
+                            <span class="card-meta-tempo">⏱️ 3 min de leitura</span>
+                            <span class="card-meta-local">📍 Pacaraima / TI São Marcos</span>
+                        </div>
+                        <div class="lenda-narrativa-completa" hidden>
+                            <p>Emergindo solitária na planície dourada da Terra Indígena São Marcos, a <strong>Pedra Pintada</strong> é um monólito de arenito com mais de 35 metros de altura e cerca de 60 metros de diâmetro. Trata-se de um dos sítios arqueológicos mais fascinantes das Américas, com registros que remontam a mais de 4.000 anos.</p>
+                            <p>Nas paredes externas e nas grutas internas encontram-se centenas de pinturas rupestres vermelhas retratando figuras humanas, animais do lavrado, padrões astronômicos e símbolos rituais enigmáticos.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="artigos/pedra-pintada.html" class="btn btn-card">Conhecer os Segredos ➔</a>
+                    </div>
+                </article>
+
+                <!-- Lugar 2: Serra do Tepequém -->
+                <article class="lenda-card" data-categoria="lugares" data-id="serra-tepequem">
+                    <div class="card-media">
+                        <img src="assets/images/serra-tepequem.jpg" alt="Cachoeira cristalina do Tepequém" loading="lazy">
+                        <span class="card-badge badge-lugar">Santuário Ecológico</span>
+                        <button class="btn-favorito-card" aria-label="Favoritar" title="Favoritar">♡</button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Serra do Tepequém (Amajari)</h3>
+                        <p class="card-excerpt">Antigo vulcão adormecido cercado por platôs e cachoeiras de águas verde-esmeralda (Paiva e Barata). A lenda indígena do Deus do Fogo que gerou os diamantes.</p>
+                        <div class="card-meta">
+                            <span class="card-meta-tempo">⏱️ 4 min de leitura</span>
+                            <span class="card-meta-local">📍 Amajari</span>
+                        </div>
+                        <div class="lenda-narrativa-completa" hidden>
+                            <p>Localizada no município de Amajari, a <strong>Serra do Tepequém</strong> é um acidente geográfico monumental cujo nome, na língua indígena ancestral, significa <em>"Deus do Fogo"</em> ou <em>"Montanha que Escarra Chamas"</em>.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="artigos/serra-tepequem.html" class="btn btn-card">Explorar Tepequém ➔</a>
+                    </div>
+                </article>
+
+                <!-- Lugar 3: Monte Roraima -->
+                <article class="lenda-card" data-categoria="lugares" data-id="monte-roraima">
+                    <div class="card-media">
+                        <img src="assets/images/monte-roraima.jpg" alt="Monte Roraima" loading="lazy">
+                        <span class="card-badge badge-lugar">Tepuy Sagrado</span>
+                        <button class="btn-favorito-card" aria-label="Favoritar" title="Favoritar">♡</button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">O Platô do Monte Roraima</h3>
+                        <p class="card-excerpt">Com mais de 2.800 metros de altitude e paredões verticais milenares, é considerado a morada sagrada dos espíritos e o toco da mítica árvore cósmica Wazaká.</p>
+                        <div class="card-meta">
+                            <span class="card-meta-tempo">⏱️ 4 min de leitura</span>
+                            <span class="card-meta-local">📍 Uiramutã / Tríplice Fronteira</span>
+                        </div>
+                        <div class="lenda-narrativa-completa" hidden>
+                            <p>Segundo a riquíssima cosmologia dos povos <strong>Macuxi e Taurepang</strong>, o Monte Roraima é o toco petrificado da Grande Árvore da Vida Wazaká.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="artigos/monte-roraima.html" class="btn btn-card">Ver Narrativa Sagrada ➔</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ======================================================== -->
+        <!-- SEÇÃO: CULINÁRIA & SABORES ANCESTRAIS (#gastronomia)     -->
+        <!-- ======================================================== -->
+        <section id="gastronomia" class="section-block">
+            <div class="section-header">
+                <span class="section-badge">Identidade Roraimense</span>
+                <h2 class="section-title">Culinária Ancestral & Sabores do Lavrado</h2>
+                <p class="section-subtitle">A união das tradições indígenas milenares com a cultura do vaqueiro e das savanas do extremo norte brasileiro.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Prato 1: Damorida -->
+                <article class="lenda-card" data-categoria="cultura" data-id="damorida">
+                    <div class="card-media">
+                        <img src="assets/images/damorida.jpg" alt="Prato tradicional Damorida" loading="lazy">
+                        <span class="card-badge badge-cultura">Patrimônio Imaterial</span>
+                        <button class="btn-favorito-card" aria-label="Favoritar" title="Favoritar">♡</button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">A Tradicional Damorida</h3>
+                        <p class="card-excerpt">Cozido sagrado servido em panela de barro com peixe nobre (tucunaré ou surubim), folhas de chicória e pimenta murupi aromática, acompanhado de beiju fresco.</p>
+                        <div class="card-meta">
+                            <span class="card-meta-tempo">⏱️ 3 min de leitura</span>
+                            <span class="card-meta-local">📍 Comunidades Indígenas</span>
+                        </div>
+                        <div class="lenda-narrativa-completa" hidden>
+                            <p>Patrimônio Cultural Imaterial de Roraima, a <strong>Damorida</strong> é um ritual de partilha, identidade e comunhão entre as famílias indígenas de Roraima.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="artigos/damorida.html" class="btn btn-card">História da Damorida ➔</a>
+                    </div>
+                </article>
+
+                <!-- Prato 2: Paçoca de Carne de Sol -->
+                <article class="lenda-card" data-categoria="cultura" data-id="damorida">
+                    <div class="card-media">
+                        <img src="assets/images/pacoca.jpg" alt="Culinária regional de Roraima" style="filter: hue-rotate(35deg);" loading="lazy">
+                        <span class="card-badge badge-cultura">Sabor do Lavrado</span>
+                        <button class="btn-favorito-card" aria-label="Favoritar" title="Favoritar">♡</button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Paçoca com Banana</h3>
+                        <p class="card-excerpt">A iguaria mais popular de Boa Vista e do lavrado: carne de sol artesanal frita e socada no pilão com farinha de mandioca amarela torrada, servida com banana madura.</p>
+                        <div class="card-meta">
+                            <span class="card-meta-tempo">⏱️ 3 min de leitura</span>
+                            <span class="card-meta-local">📍 Boa Vista e Lavrado</span>
+                        </div>
+                        <div class="lenda-narrativa-completa" hidden>
+                            <p>A paçoca de carne de sol é o alimento tradicional dos vaqueiros de Roraima, pilada à mão e acompanhada de banana fresca ou frita.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="artigos/pacoca.html" class="btn btn-card">Ver Tradição Culinária ➔</a>
+                    </div>
+                </article>
+
+                <!-- Prato 3: Beiju e Derivados da Mandioca -->
+                <article class="lenda-card" data-categoria="cultura" data-id="damorida">
+                    <div class="card-media">
+                        <img src="assets/images/beiju.jpg" alt="Beiju tradicional de mandioca" style="filter: sepia(0.35);" loading="lazy">
+                        <span class="card-badge badge-cultura">Alimento Ancestral</span>
+                        <button class="btn-favorito-card" aria-label="Favoritar" title="Favoritar">♡</button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">O Beiju e a Farinha do Uiramutã</h3>
+                        <p class="card-excerpt">Feito artesanalmente pelas mulheres indígenas em tachos de barro ou ferro, o beiju crocante é a base alimentar que acompanha caldos e guisados há séculos em Roraima.</p>
+                        <div class="card-meta">
+                            <span class="card-meta-tempo">⏱️ 3 min de leitura</span>
+                            <span class="card-meta-local">📍 Uiramutã e Raposa Serra do Sol</span>
+                        </div>
+                        <div class="lenda-narrativa-completa" hidden>
+                            <p>Feito artesanalmente a partir da massa pura de mandioca prensada e assada em tachos bem quentes.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="artigos/beiju.html" class="btn btn-card">Conhecer a Origem ➔</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ======================================================== -->
+        <!-- 4. TABELA CULTURAL DOS MUNICÍPIOS (AULA 02 - TABELAS)    -->
+        <!-- ======================================================== -->
+        <section id="municipios" class="section-block">
+            <div class="section-header">
+                <span class="section-badge">Geografia & Etnografia</span>
+                <h2 class="section-title">Panorama Cultural dos Municípios de Roraima</h2>
+                <p class="section-subtitle">Conheça a distribuição dos povos originários, os principais atrativos míticos e as tradições de cada região do Estado.</p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="tabela-cultural">
+                    <thead>
+                        <tr>
+                            <th scope="col">Município</th>
+                            <th scope="col">Etnias Presentes</th>
+                            <th scope="col">Marco Mítico / Atrativo</th>
+                            <th scope="col">Tradição / Culinária</th>
+                            <th scope="col">Curiosidade Cultural</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Boa Vista</strong> (Capital)</td>
+                            <td>Macuxi, Wapichana, Yanomami</td>
+                            <td>Monumento aos Pioneiros & Rio Branco</td>
+                            <td>Paçoca com Banana, Caldeirada</td>
+                            <td>Única capital brasileira totalmente ao norte da Linha do Equador.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Uiramutã</strong></td>
+                            <td>Macuxi, Ingarikó, Patamona</td>
+                            <td>Monte Roraima & Cachoeiras da Raposa</td>
+                            <td>Damorida Autêntica e Beiju</td>
+                            <td>O município mais setentrional (ao norte) de todo o Brasil.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pacaraima</strong></td>
+                            <td>Taurepang, Macuxi</td>
+                            <td>Sítio Arqueológico da Pedra Pintada</td>
+                            <td>Cestaria em fibra de arumã</td>
+                            <td>Cidade serrana com clima ameno na fronteira com a Venezuela.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Amajari</strong></td>
+                            <td>Macuxi, Ye'kwana</td>
+                            <td>Serra do Tepequém & Cachoeira do Paiva</td>
+                            <td>Peixes de água doce ao tucupi</td>
+                            <td>Região marcada pela antiga corrida dos diamantes e belezas vulcânicas.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bonfim</strong></td>
+                            <td>Wapichana, Macuxi</td>
+                            <td>Lago Parime e Savanas do Lavrado</td>
+                            <td>Vaquejada e Carne de Sol Tradicional</td>
+                            <td>Conexão histórica e fluvial com a Guiana Inglesa através do Rio Tacutu.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ======================================================== -->
+        <!-- 5. FORMULÁRIO DO MURAL COMUNITÁRIO (AULAS 03, 07, 08)    -->
+        <!-- ======================================================== -->
+        <section id="mural" class="section-block">
+            <div class="section-header">
+                <span class="section-badge">Participação Popular</span>
+                <h2 class="section-title">Mural Vivo da Cultura de Roraima</h2>
+                <p class="section-subtitle">Você conhece uma história, causo do lavrado ou receita tradicional contada por seus avós? Compartilhe com a nossa comunidade!</p>
+            </div>
+
+            <div class="mural-container">
+                <!-- Formulário com Validação Nativa HTML5 -->
+                <form id="form-historia" class="form-card" novalidate>
+                    <h3>Envie sua História Ancestral</h3>
+                    <p class="form-desc">Preencha os campos abaixo. Sua contribuição será adicionada ao mural instantaneamente!</p>
+
+                    <div class="form-group">
+                        <label for="autor-nome">Seu Nome ou Apelido *</label>
+                        <input type="text" id="autor-nome" name="nome" placeholder="Ex: Maiara Macuxi" required minlength="3">
+                        <span class="error-msg">Informe um nome com pelo menos 3 caracteres.</span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="autor-email">Seu E-mail *</label>
+                            <input type="email" id="autor-email" name="email" placeholder="seu@email.com" required>
+                            <span class="error-msg">Informe um e-mail válido para contato.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="municipio-origem">Município de Referência *</label>
+                            <select id="municipio-origem" name="municipio" required>
+                                <option value="" disabled selected>Selecione um município...</option>
+                                <option value="Boa Vista">Boa Vista</option>
+                                <option value="Uiramutã">Uiramutã</option>
+                                <option value="Pacaraima">Pacaraima</option>
+                                <option value="Amajari">Amajari</option>
+                                <option value="Bonfim">Bonfim</option>
+                                <option value="Cantá">Cantá</option>
+                                <option value="Rorainópolis">Rorainópolis</option>
+                                <option value="Alto Alegre">Alto Alegre</option>
+                                <option value="Caracaraí">Caracaraí</option>
+                                <option value="Outro">Outro / Comunidade Indígena</option>
+                            </select>
+                            <span class="error-msg">Selecione o município de origem.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="historia-titulo">Título da História ou Lenda *</label>
+                            <input type="text" id="historia-titulo" name="titulo" placeholder="Ex: O Causo da Cobra Sofia no Rio Branco" required minlength="4">
+                            <span class="error-msg">Informe um título com no mínimo 4 caracteres.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="historia-categoria">Categoria Temática *</label>
+                            <select id="historia-categoria" name="categoria" required>
+                                <option value="Lenda Sagrada">Lenda Sagrada</option>
+                                <option value="Lugar Místico">Lugar Místico</option>
+                                <option value="Culinária Tradicional">Culinária Tradicional</option>
+                                <option value="Causo Popular">Causo Popular do Lavrado</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="historia-texto">A Narrativa Completa *</label>
+                        <textarea id="historia-texto" name="texto" rows="5" placeholder="Conte como você ouviu essa história, seus detalhes e ensinamentos..." required minlength="20"></textarea>
+                        <span class="error-msg">A história deve conter pelo menos 20 caracteres para ser publicada.</span>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="concordo-termos" required>
+                        <label for="concordo-termos">Declaro que esta história faz parte da tradição popular e autorizo sua exibição pública no portal cultural.</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Publicar História no Mural 🚀</span>
+                    </button>
+                </form>
+
+                <!-- Feed do Mural Comunitário Dinâmico -->
+                <div class="feed-mural">
+                    <div class="feed-header">
+                        <h3>Histórias Publicadas pela Comunidade</h3>
+                        <span id="total-historias" class="badge-tag">2 histórias</span>
+                    </div>
+
+                    <div id="lista-mural" class="feed-list">
+                        <!-- Itens dinâmicos criados com JS e salvos no localStorage -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================================================== -->
+    <!-- 6. MODAL INTERATIVO DE LEITURA COMPLETA (AULAS 06, 07)   -->
+    <!-- ======================================================== -->
+    <aside id="drawer-favoritos" class="drawer-overlay" aria-hidden="true">
+        <div class="drawer-card">
+            <div class="drawer-header">
+                <h3>Minhas Lendas Salvas (♥)</h3>
+                <button id="drawer-fechar" class="drawer-btn-close" aria-label="Fechar painel de favoritos">&times;</button>
+            </div>
+            <div class="drawer-body">
+                <p id="drawer-vazio" class="drawer-empty-msg">Você ainda não favoritou nenhuma lenda. Clique no coraçãozinho dos cards para salvar!</p>
+                <ul id="lista-favoritos" class="favoritos-list">
+                    <!-- Injetado via JS -->
+                </ul>
+            </div>
+            <div class="drawer-footer">
+                <button id="btn-limpar-favoritos" class="btn btn-danger-outline">Limpar Todos os Favoritos</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Botão Flutuante Voltar ao Topo -->
+    <button id="btn-voltar-topo" class="btn-voltar-topo" aria-label="Voltar ao topo da página" title="Voltar ao Topo">
+        <span class="arrow-icon">↑</span>
+    </button>
+
+    <!-- ======================================================== -->
+    <!-- 8. FOOTER SEMÂNTICO E ACESSÍVEL (AULAS 01, 02)           -->
+    <!-- ======================================================== -->
+    <footer class="footer-principal">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="logo">
+                    <span class="logo-emblem">⛰️</span>
+                    <span class="logo-title">ENCANTOS DE RORAIMA</span>
+                </div>
+                <p class="footer-text">
+                    Projeto Integrador Modelo desenvolvido como referência pedagógica para a disciplina de 
+                    <strong>Fundamentos de Desenvolvimento Web</strong> do <strong>ITEAM</strong>.
+                </p>
+                <p class="footer-copy">&copy; 2026 Instituto de Tecnologia e Aprendizado Moderno. Conteúdo sob licença educacional.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação Rápida</h4>
+                <ul class="footer-links">
+                    <li><a href="#destaques">Destaques Ancestrais</a></li>
+                    <li><a href="#lendas">Catálogo de Lendas</a></li>
+                    <li><a href="#lugares">Lugares Sagrados</a></li>
+                    <li><a href="#gastronomia">Culinária & Tradição</a></li>
+                    <li><a href="#municipios">Municípios de Roraima</a></li>
+                    <li><a href="#mural">Mural da Comunidade</a></li>
+                    <li><a href="#topo" class="link-voltar-topo">⬆ Voltar ao Topo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Pilares Integrados</h4>
+                <ul class="footer-tags">
+                    <li>HTML5 Semântico</li>
+                    <li>CSS3 Moderno</li>
+                    <li>CSS Grid & Flexbox</li>
+                    <li>Mobile-First</li>
+                    <li>DOM Interativo</li>
+                    <li>LocalStorage (A11y & SEO)</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Principal da Aplicação -->
+    <script src="app.js"></script>
+</body>
+</html>
